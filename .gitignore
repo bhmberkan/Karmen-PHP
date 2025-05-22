@@ -1,0 +1,21 @@
+# PHP genel
+*.log
+*.cache
+*.tmp
+*.swp
+*.bak
+
+# Ortam dosyaları
+.env
+.env.*
+
+# Composer
+/vendor/
+
+# IDE klasörleri
+.idea/
+.vscode/
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db

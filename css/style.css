@@ -1,0 +1,528 @@
+*{
+    box-sizing: border-box;
+    /*pading ve border gibi özellikler eklediğimizde genişlemesini engelliyoruz*/
+}
+
+body
+{
+   
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: 100;
+  font-weight: 300;
+  font-style: normal;
+    
+    margin: 0; 
+
+}
+
+#menu
+{
+    height: 80px; 
+    padding: 0 20px; 
+    
+}
+
+#logo
+{
+    font-size: 30px;
+    line-height: 80px;
+    color: #003666; 
+    float: left;
+}
+
+nav
+{
+   float: right;
+    line-height: 80px;
+    
+}
+/*tıklanmadan önceki hali a etiketlerinin*/
+nav a:link
+{
+    text-decoration: none;
+    margin-right: 25px; 
+    color: #003666; 
+}
+
+nav a:hover
+{
+    /*text-decoration: underline
+    logoların altını çızmedi*/
+    
+    border-bottom: 2px solid #003666;
+}
+
+nav a:visited
+{
+    text-decoration: none;
+    margin-right: 25px; 
+    color: #003666; 
+}
+
+.ikon
+{
+    margin-right: 7px;
+    font-size: 16px;
+}
+#anasayfa {
+    position: relative; /* Ana içerik alanı pozisyonu ayarla */
+    height: 600px;
+    background-image: url("../img/r2.jpg");
+    background-size: cover; /* Resmi alanın içerisine sığdırıyoruz */
+    background-position: center;
+    background-attachment: fixed; /* Sabitledik, banner aşağı kaymayacak */
+}
+
+#black {
+    position: absolute; /* Tam arka planda siyah bir katman */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#icerik {
+    position: absolute; /* İçerik katmanını mutlak konumlandırma */
+    top: 40%; /* Örneğin, 50px yukarıda */
+    left: 40%; /* Örneğin, 40px solda */
+    /*içeriği ortaladık*/
+     transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+   /* width: 70%;
+    height: 70%;*/
+}
+
+#hakkimizda{
+border: 3px solid #003666;
+    width: 1550px;
+    background-color: #F8F9FA;
+    padding: 50px;
+    text-align:center;
+    text-transform:capitalize;
+    font-weight:400;
+
+}
+
+h3{
+    font-size: 55px;
+    color: #003666;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+
+.conteiner
+{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+
+    
+}
+
+#sol
+{
+    float: left;
+    border-right: 3px solid #445c6e; 
+    font-size: 25px;
+    width: 400px;
+    color: #445c6e;
+    
+}
+
+#h5sol
+{
+    line-height: 1.6;
+    font-size: 25px;
+    font-weight: 00;
+}
+
+#h5sol, #sag
+{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+span
+{
+    font-size: 50px;
+    margin-right: 7px;
+    line-height: 42px;
+    color:#003666;
+    font-weight: 600;
+    float: left;
+}
+
+#sag
+{
+    float: right;
+    width: 60%;
+    color: #999999;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
+.imgsekil
+{
+    max-width: 100%;
+    height: auto;
+     margin-top: 50px;
+}
+
+
+#pson
+{
+    color: #999; 
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+#egitimler
+{
+    background-color: #ffffff;
+    padding: 50px;
+    text-align: center;
+ /*   height: 700px; */
+
+ 
+
+
+    
+}
+
+.card
+{
+    width: 320px;
+    height: 350px;
+    border: 1px solid #dddddd;
+    padding: 0;
+    display: inline-block; /* hem inline gibi aynı satıra gelsin hem de blok gibi genişlik özelliklerini alabilir oldu */
+    
+}
+
+.card img {
+    display: block; /* Resmi blok seviyesine dönüştürdük */
+    margin: 0; /* Gereksiz boşluğu sıfırladık */
+}
+
+.baslikcard
+{
+    font-size: 15px;
+    color: #003666;
+}
+
+.cardp
+{
+    color:#888888;
+}
+
+.card:hover
+{
+    border: 2px solid gray;
+}
+
+#ekip
+{
+    background-color: #003666;
+    padding: 50px;
+    height: 900px;
+    text-align: center;
+    display: block;
+    
+
+ 
+
+}
+
+
+#ekiph3
+{
+    color: white;
+}
+
+.sutun-sol-sag
+{
+    width: 385px;
+    float: left;
+    padding: 50px;
+}
+
+.oval
+{
+    border-radius: 50%;
+}
+
+.ekipisim
+{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.ekipp
+{
+    color:#888888;
+    font-size: 20px;
+}
+
+.social{
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    width: 50px;
+    border-radius: 5px;
+    margin: 5px 10px;
+}
+
+.social:hover
+{
+    background-color: #888888;
+    border: 2px;
+}
+
+.sutun-orta
+{
+    width: 385px;
+    float: left;
+    padding: 10px;
+}
+
+#iletisim
+{
+    background:  url("../img/iletisim.jpg");
+    background-size: cover;
+    padding: 50px;
+    height: auto;
+    text-align: center;
+}
+
+#h3iletisim
+{
+    color: white;
+}
+
+#ilteisim-opak
+{
+    background-color: rgba(255,255,255,0.2);
+    padding: 30px 20px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    height: 550px;
+}
+
+#form-group
+{
+    width: 700px;
+    float: left;
+    height: 500px;
+    text-align: left;
+}
+
+#sol-form
+{
+    width: 50%;
+    float: left;
+    padding-right: 5px;
+}
+
+#sag-form
+{
+    width: 50%;
+    float: right;
+    padding-left: 5px;
+}
+
+.form-control
+{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.5px;
+    color: #495057;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+textarea
+{
+    font-family: Arial;
+    height: 200px;
+}
+
+input[type="submit"]
+{
+    cursor: pointer;
+    background-color: #445C6e;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+#adres
+{
+    width: 450px;
+    float: left;
+    padding: 30px;
+    height: 500px;
+    text-align: left;
+    
+}
+
+#adresbaslik
+{
+    font-size: 25px;
+    color: white;
+}
+
+.adresp
+{
+    color: #dddddd;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    
+}
+
+#copy-right
+{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+#up
+{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 9px 12px;
+    margin-top: 20px;
+}
+
+
+
+////////////////////////////
+
+/* Varsayılan stiller */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+#menu {
+    height: 80px;
+    padding: 0 20px;
+}
+
+#logo {
+    font-size: 30px;
+    line-height: 80px;
+    color: #003666;
+    float: left;
+}
+
+nav {
+    float: right;
+    line-height: 80px;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 25px;
+    color: #003666;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #003666;
+}
+
+nav a:visited {
+    text-decoration: none;
+    margin-right: 25px;
+    color: #003666;
+}
+
+/* Tablet için stiller */
+@media (max-width: 768px) {
+    #menu {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    #logo {
+        font-size: 25px;
+        line-height: 60px;
+    }
+
+    nav {
+        line-height: 60px;
+    }
+
+    nav a {
+        margin-right: 15px; /* Tablet boyutuna göre boşlukları azalt */
+    }
+
+    .ikon {
+        margin-right: 5px; /* Tablet boyutuna göre boşlukları azalt */
+        font-size: 12px; /* Tablet boyutuna göre ikon boyutunu küçült */
+    }
+
+    /* Diğer öğeler için gerekli değişiklikler yapılabilir */
+}
+
+/* Mobil için stiller */
+@media (max-width: 480px) {
+    #menu {
+        height: 50px;
+        padding: 0 10px;
+    }
+
+    #logo {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    nav {
+        line-height: 50px;
+    }
+
+    nav a {
+        margin-right: 10px; /* Mobil boyutuna göre boşlukları daha da azalt */
+    }
+
+    .ikon {
+        margin-right: 3px; /* Mobil boyutuna göre boşlukları daha da azalt */
+        font-size: 12px; /* Mobil boyutuna göre ikon boyutunu daha da küçült */
+    }
+
+    
+}
+
+.owl-carousel{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* veya space-between */
+}
+
